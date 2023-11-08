@@ -36,4 +36,13 @@ def Valores_a_Graficar(alfa,l):
     
     valores.append(alfa*l)
         
-    return valores 
+    return valores
+ 
+def Resultado_Fibra(n, c, e, J, a, L ):
+    
+    TA=((n*c)+(e*J)+(L*a)+(3))
+    OA=a*L
+    CA=n*c
+    FA=e*J
+
+    return TA, OA, CA, FA
