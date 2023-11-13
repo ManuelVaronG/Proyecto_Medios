@@ -15,6 +15,7 @@ def Calculo_Coaxial( parametros : Models.Parametros_Coaxial):
     G=float("{:.3e}".format(G))
     alfa, floss=Calculos.Perdidas_Cable(R,L,C,G,parametros.l,w)
     alfa=float("{:.3e}".format(alfa))
+    floss=float("{:.3e}".format(floss))
     valores_graf=Calculos.Valores_a_Graficar(alfa, parametros.l)
     return {'R' : R, 'L' : L, 'G' : G, 'C' : C, 'alfa' : alfa, 'floss' : floss, 'Val_Graf' : valores_graf}
 
